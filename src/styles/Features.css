@@ -1,0 +1,253 @@
+.features-section {
+    width: 100%;
+    background: #2F241F;
+    padding: 72px 0;
+  }
+  
+  .features-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 142px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .features-subtitle {
+    color: #E5F0B6;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+  
+  .features-title {
+    color: #E5F0B6;
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    max-width: 1156px;
+  }
+  
+  .features-boxes {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+  }
+  
+  .feature-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+  }
+  
+  .feature-box.feature-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .feature-icon {
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    background: rgba(229, 240, 182, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+  
+  .materials-icon:before {
+    content: '';
+    position: absolute;
+    width: 17.05px;
+    height: 17.06px;
+    left: 12px;
+    top: 12px;
+    background: #F4F4F4;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 90%, 0% 100%);
+  }
+  
+  .warranty-icon {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+  }
+  
+  .expertise-icon:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    left: 10px;
+    top: 10px;
+    background: #F4F4F4;
+    clip-path: polygon(50% 0%, 100% 33%, 83% 100%, 17% 100%, 0% 33%);
+  }
+  
+  .feature-text {
+    color: #E5F0B6;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    max-width: 290px;
+  }
+  
+  @media (max-width: 1440px) {
+    .features-container {
+      padding: 0 80px;
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .features-container {
+      padding: 0 60px;
+    }
+    
+    .features-title {
+      font-size: 52px;
+    }
+    
+    .features-boxes {
+      gap: 40px;
+    }
+    
+    .feature-text {
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .features-section {
+      padding: 60px 0;
+    }
+    
+    .features-container {
+      padding: 0 40px;
+    }
+    
+    .features-title {
+      font-size: 42px;
+    }
+    
+    .features-boxes {
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: space-between;
+    }
+    
+    .feature-box {
+      width: calc(50% - 16px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .features-section {
+      padding: 50px 0;
+    }
+    
+    .features-container {
+      padding: 0 30px;
+      gap: 30px;
+    }
+    
+    .features-subtitle {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    
+    .features-title {
+      font-size: 36px;
+    }
+    
+    .features-boxes {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .feature-box {
+      width: 100%;
+    }
+    
+    .feature-text {
+      font-size: 18px;
+      line-height: 27px;
+      max-width: none;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .features-section {
+      padding: 40px 0;
+    }
+    
+    .features-container {
+      padding: 0 20px;
+      gap: 24px;
+    }
+    
+    .features-subtitle {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    
+    .features-title {
+      font-size: 28px;
+    }
+    
+    .feature-icon {
+      width: 32px;
+      height: 32px;
+    }
+    
+    .materials-icon:before {
+      width: 14px;
+      height: 14px;
+      left: 9px;
+      top: 9px;
+    }
+    
+    .warranty-icon {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    
+    .expertise-icon:before {
+      width: 16px;
+      height: 15px;
+      left: 8px;
+      top: 8px;
+    }
+    
+    .feature-text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .features-title {
+      font-size: 24px;
+    }
+    
+    .features-subtitle {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    
+    .feature-text {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
