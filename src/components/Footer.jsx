@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="footer-brand">
             <div className="logo">
               <img
-                src="/src/assets/images/logo.png"
+                src="/images/logo.png"
                 alt="Logo"
                 className="logo-image"
               />

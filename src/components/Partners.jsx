@@ -3,10 +3,10 @@ import $ from "jquery";
 import "../styles/Partners.css";
 
 const logos = [
-  "/src/assets/images/Company logo-1.png",
-  "/src/assets/images/Company logo-2.png",
-  "/src/assets/images/Company logo-3.png",
-  "/src/assets/images/Company logo-4.png",
+  "/images/Company logo-1.png",
+  "/images/Company logo-2.png",
+  "/images/Company logo-3.png",
+  "/images/Company logo-4.png",
 ];
 
 const Partners = () => {
