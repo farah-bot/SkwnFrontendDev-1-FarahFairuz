@@ -4,7 +4,7 @@
 
 A modern responsive furniture landing page built with React, Vite, CSS, and jQuery. The project showcases a beautifully designed interface for a furniture company with responsive layouts and smooth animations.
 
-![Dekoor Screenshot](./src/assets/images/screenshot.png)
+![Dekoor Screenshot](./src/assets/dekoor.png)
 
 ## 🚀 Live Demo
 
