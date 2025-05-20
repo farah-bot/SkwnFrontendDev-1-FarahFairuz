@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-Visit the live demo at: [https://skwn-frontend-dev-furniture.vercel.app](https://skwn-frontend-dev-furniture.vercel.app)
+Visit the live demo at: [https://skwnfrontenddev-1-farahfairuz.vercel.app](https://skwnfrontenddev-1-farahfairuz.vercel.app)
 
 ## 🛠️ Technologies Used
 
