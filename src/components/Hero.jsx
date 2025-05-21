@@ -1,9 +1,20 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import $ from "jquery";
+import { fetchProducts } from "../api/furnitureApi";
 import "../styles/Hero.css";
 
 const Hero = () => {
   const heroRef = useRef(null);
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const products = await fetchProducts();
+      const target = products.find((item) => item.id === "1");
+      setProduct(target);
+    };
+    fetchProduct();
+  }, []);
 
   useEffect(() => {
     if (!heroRef.current) return;
@@ -66,19 +77,21 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="hero-image-container">
-          <img
-            src="/api/placeholder/522x709"
-            alt="Pösht Sofa"
-            className="hero-image"
-          />
-          <span className="product-price">$329</span>
-          <h2 className="product-name">Pösht Sofa</h2>
-          <button className="view-details-btn">
-            VIEW DETAILS
-            <span className="arrow-icon"></span>
-          </button>
-        </div>
+        {product && (
+          <div className="hero-image-container">
+            <img
+              src={product.image || "/api/placeholder/522x709"}
+              alt={product.name}
+              className="hero-image"
+            />
+            <div className="hero-price">${product.price}</div>
+            <h2 className="hero-name">{product.name}</h2>
+            <button className="view-details-btn">
+              VIEW DETAILS
+              <span className="arrow-icon"></span>
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
