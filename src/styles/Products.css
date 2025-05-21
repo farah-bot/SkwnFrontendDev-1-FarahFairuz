@@ -171,6 +171,7 @@
     height: 19.8px;
     top: 2.1px;
     background: #2F241F;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
   }
   
   .slider-prev .arrow-icon::after {
@@ -307,6 +308,7 @@
     height: 13.2px;
     top: 1.4px;
     background: #2F241F;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
   }
   
   .slider-prev-mobile .arrow-icon-mobile::after {
