@@ -2,13 +2,11 @@
 
 ## Dekoor - Furniture Landing Page
 
-A modern responsive furniture landing page built with React, Vite, CSS, and jQuery. The project showcases a beautifully designed interface for a furniture company with responsive layouts and smooth animations.
-
 ![Dekoor Screenshot](./src/assets/dekoor.png)
 
 ## 🚀 Live Demo
 
-Visit the live demo at: [https://skwn-frontend-dev-furniture.vercel.app](https://skwn-frontend-dev-furniture.vercel.app)
+Visit the live demo at: [https://skwnfrontenddev-1-farahfairuz.vercel.app](https://skwnfrontenddev-1-farahfairuz.vercel.app)
 
 ## 🛠️ Technologies Used
 
